@@ -1,5 +1,3 @@
-
-
 // Demo of calling function - console is the Javascript editor envirment in the brower
 //console.log(message)
 console.log('main.js is loaded')
@@ -15,3 +13,17 @@ function strong(value){
     // Combining strings to produce a new string is called concation
     return '<strong>' + value + '</strong>'; 
 }
+
+
+var text
+var value
+
+function italics(text){
+	return '<i>' + text + '</i>'
+}
+
+function updateInnerHTML(text, value){
+    document.querySelector(text).innerHTML = value; 
+}
+
+updateInnerHTML(value)
